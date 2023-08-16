@@ -227,7 +227,7 @@ Ao seguir o DIP e injetar abstrações, estamos construindo um código mais flex
 
 #### 👨‍💻 Ao aplicar esses princípios ao desenvolvimento em Node.js com TypeScript, conseguimos criar aplicações mais flexíveis, escaláveis e fáceis de se manter. A tipagem forte do TypeScript também ajuda a identificar problemas em tempo de desenvolvimento, reduzindo erros e aumentando a confiança no código.
 
-Compartilhe suas opiniões nos comentários. Vamos crescer juntos como profissionais de tecnologia! 🚀
+Compartilhe suas opiniões nos comentários 🚀
 
 #DesenvolvimentoWeb #Nodejs #TypeScript #SOLIDPrinciples #AprendizadoConstante
 
