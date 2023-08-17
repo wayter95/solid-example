@@ -1,8 +1,10 @@
 # 🚀 Explorando Princípios SOLID com TypeScript e Node.js! 🌟
 
-Apesar de não ser muito ativo em publicações no LinkedIn, decidi iniciar esse compartilhamento, especialmente porque estou mergulhando cada vez mais nos estudos de arquitetura de software. Afinal, para construir sistemas sólidos, a clareza no código é essencial. Hoje, gostaria de dividir minha perspectiva em relação aos princípios SOLID, em conexão com o desenvolvimento em Node.js e o uso do TypeScript. 💡
+Em um mundo de desenvolvimento ágil, é fácil perder-se em meio ao código complexo e intricado. Ao adentrar mais nos estudos de arquitetura de software, percebi que o segredo para evitar essa armadilha reside na simplicidade e clareza do código. E é exatamente aqui que os princípios SOLID entram em jogo. Hoje, gostaria de compartilhar minha jornada explorando esses princípios com TypeScript e Node.js.
 
-🔍 Para quem não está familiarizado, SOLID é um acrônimo que representa cinco princípios fundamentais para escrever código limpo, escalável e de fácil manutenção. Vamos dar uma olhada rápida:
+🔍 Para os novatos, SOLID é um acrônimo que descreve cinco princípios fundamentais para criar códigos limpos, escaláveis e de fácil manutenção.
+
+#### Acompanhe-me nesta exploração:
 
 ### S - Princípio da Responsabilidade Única (SRP - Single Responsibility Principle):
 
@@ -120,8 +122,6 @@ As classes derivadas devem ser substituíveis por suas classes base sem afetar a
 ```ts
 import { User, UserProps } from './user.entity';
 
-interface import { User, UserProps } from './user.entity';
-
 interface AdminUserProps extends UserProps {
   role: string;
 }
@@ -147,7 +147,7 @@ Isso demonstra como a substituição de User por AdminUser segue o Princípio da
 
 ### I - Princípio da Segregação de Interface: (ISP - Interface Segregation Principle):
 
-Clientes não devem ser forçados a depender de interfaces que não utilizam. Interfaces específicas são melhores do que uma interface genérica.
+É vital evitar sobrecarregar uma classe ou entidade com responsabilidades desnecessárias. Esse princípio destaca a importância de manter as interfaces limpas e diretas ao ponto.
 
 ```ts
 import { User } from "../../entities/user.entity";
@@ -193,7 +193,7 @@ export { SignUpUseCase };
 - Na classe ISignUpUseCase definimos uma interface específica para o caso de uso SignUpUseCase. Isso evita a dependência de métodos não utilizados e torna nossa interface mais coesa e mais facil de se entender.
 
 ### D - Princípio da Inversão de Dependência (DIP - Dependency Inversion Principle):
-Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações. Além disso, detalhes devem depender de abstrações, não o contrário.
+O núcleo deste princípio é a desacoplagem. Evitando dependências rígidas, mantemos nosso código flexível e adaptável às mudanças futuras.
 
 ```ts
 import { User } from "../../entities/user.entity";
@@ -225,9 +225,9 @@ export {SignUpUseCase}
 
 Ao seguir o DIP e injetar abstrações, estamos construindo um código mais flexível, extensível e de fácil manutenção. Isso nos permite adaptar nosso sistema a mudanças e evoluções sem causar interrupções ou reescrever grandes partes do código.
 
-#### 👨‍💻 Ao aplicar esses princípios ao desenvolvimento em Node.js com TypeScript, conseguimos criar aplicações mais flexíveis, escaláveis e fáceis de se manter. A tipagem forte do TypeScript também ajuda a identificar problemas em tempo de desenvolvimento, reduzindo erros e aumentando a confiança no código.
+#### 👨‍💻 Conclusão:
+Ao incorporar os princípios SOLID no desenvolvimento com Node.js e TypeScript, não apenas fortalecemos a base arquitetural de nossas aplicações, mas também nos preparamos para os desafios futuros. E com o suporte de tipagem do TypeScript, temos uma ferramenta adicional para nos ajudar a identificar e corrigir problemas mais cedo no ciclo de desenvolvimento. Esse é o caminho para um código robusto e eficiente!
 
-Compartilhe suas opiniões nos comentários 🚀
+🔗 Ler no medium: 
 
-#DesenvolvimentoWeb #Nodejs #TypeScript #SOLIDPrinciples #AprendizadoConstante
-
+https://medium.com/@wayter.paulo.95/explorando-princ%C3%ADpios-solid-com-typescript-e-node-js-7ea74124bacd
